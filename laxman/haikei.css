@@ -1,0 +1,31 @@
+
+#midasi {  /*隕句�縺苓ｨｭ螳�*/
+    position: relative;
+    width: 60%;
+    left: 20%;
+    color: #364e96; /*譁�ｭ苓牡*/
+    text-align: center;  /*繝�く繧ｹ繝井ｸｭ螟ｮ縺槭ｍ縺�*/
+    padding: 0.5em 0;/*荳贋ｸ九�菴咏區*/
+    border-top: solid 3px #364e96;/*荳顔ｷ�*/
+    border-bottom: solid 3px #364e96;/*荳狗ｷ�*/
+   
+   }
+   
+   #main {
+    display:inline-block;
+    position: relative;
+    left: 21%;
+    width: 60%;
+    #background: pink;
+   }
+   
+   p {
+    font-size: 30px;
+   }
+   
+   /*
+   left: 500px;
+    width: 100%;
+    text-align: center;  /*繝�く繧ｹ繝井ｸｭ螟ｮ縺槭ｍ縺�*/
+    /*background: red;
+   */

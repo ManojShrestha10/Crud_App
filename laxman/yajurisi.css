@@ -1,0 +1,25 @@
+.arrow-left {
+    position : absolute;                            /*遏｢蜊ｰ繧｢繧､繧ｳ繝ｳ*/
+    border: 0;
+    border-top: solid 10px #364e96;
+    border-right: solid 10px #364e96;
+    display: inline-block;
+    transform: rotate(-135deg);
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 10%; 
+}
+
+.arrow-right {
+     position : absolute;                            /*遏｢蜊ｰ繧｢繧､繧ｳ繝ｳ*/
+     border: 0;
+     border-top: solid 10px #364e96;
+     border-right: solid 10px #364e96;
+     display: inline-block;
+     transform: rotate(45deg);
+     width: 80px;
+     height: 80px;
+     top: 50%;
+     left: 85%; 
+    } 

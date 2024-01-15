@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    }
+    
+    .list {
+        width: 100%; /* 蟷�＞縺｣縺ｱ縺�ｒ謖�ｮ� */
+        height: 9%; /* 鬮倥＆謖�ｮ� */
+        #background: rgb(209, 232, 255); /* 閭梧勹濶ｲ繧呈欠螳� */
+        background: #004986;
+    
+        top: 0%; /* 荳贋ｸ九�蝗ｺ螳壻ｽ咲ｽｮ繧剃ｸ翫°繧�0px縺ｫ縺吶ｋ */
+        left: 0%; /* 蟾ｦ蜿ｳ縺ｮ蝗ｺ螳壻ｽ咲ｽｮ繧貞ｷｦ縺九ｉ0px縺ｫ縺吶ｋ */
+        display: flex; /* 荳ｭ縺ｮ隕∫ｴ�繧呈ｨｪ荳ｦ縺ｳ縺ｫ縺吶ｋ */
+        align-items: center; /* 荳ｭ縺ｮ隕∫ｴ�繧剃ｸ贋ｸ倶ｸｭ螟ｮ縺ｫ荳ｦ縺ｹ繧� */
+    }
+    
+    .list .gnav .menu {
+        position: relative;
+        left: 10%;
+        width: 100%;
+        display: flex; /* 荳ｭ縺ｮ隕∫ｴ�繧呈ｨｪ荳ｦ縺ｳ縺ｫ縺吶ｋ */
+        z-index: 2;   /*驥阪↑繧翫�鬆�ｺ丈ｸ�*/
+    
+    }
+    
+    
+    .list .gnav .menu li {  
+        width: 100%;
+        list-style: none; /* 繝ｪ繧ｹ繝医�[繝ｻ]繧呈ｶ医☆ */
+        position: relative;
+    }
+    
+    .list .gnav .menu li ul {  /*繧ｵ繝悶Γ繝九Η繝ｼ險ｭ螳�*/
+        display: none;
+        margin: 0px;
+        padding: 0px;        /* 繧ｵ繝悶Γ繝九Η繝ｼ蜀��縺ｮ菴咏區(繧ｼ繝ｭ) */
+        position: absolute;  /* 邨ｶ蟇ｾ驟咲ｽｮ縺ｫ縺吶ｋ */
+        width:100px;
+        text-align: center;
+    
+    }
+    
+    .list .gnav .menu li ul li {     /*繧ｵ繝悶Γ繝九Η繝ｼ謠�∴*/
+        margin: 0px;
+        padding: 0px;
+    
+    }
+    
+    .list .gnav .menu li:hover ul {   /*繝｡繝九Η繝ｼ縺ｫ繧ｫ繝ｼ繧ｽ繝ｫ縺悟粋繧上＆繧九→繧ｵ繝悶Γ繝九Η繝ｼ陦ｨ遉ｺ*/
+        display: block;
+    
+    }
+    
+    .list .gnav .menu li + li {
+        margin-left: 40px; /* 繝｡繝九Η繝ｼ縺ｮ繝懊ち繝ｳ縺昴ｌ縺槭ｌ縺ｫ髢馴囈繧偵≠縺代ｋ */
+    }
+    
+    .list #sotu {  /*繝｡繝九Η繝ｼ讓ｪ縺ｮ譁�ｭ苓ｨｭ螳�*/
+        color: #FFFFFF;
+    }
+    
+    .button {
+        width:100px; /*繝懊ち繝ｳ蟷�*/
+        text-align: center; /*繝懊ち繝ｳ譁�ｭ嶺ｸｭ螟ｮ縺槭ｍ縺�*/
+        display: inline-block;  /*隕∫ｴ�讓ｪ荳ｦ縺ｳ*/
+        padding: 0.3em 1em;  /*繝懊ち繝ｳ螟ｧ縺阪＆(隕∫ｴ�蜀��蟷�)*/
+        text-decoration: none; /*繝�く繧ｹ繝医↓陬�｣ｾ縺励↑縺�*/
+        color: #364e96; /*譁�ｭ苓牡*/
+        background: #FFFFFF;
+        border: solid 2px #364e96;/*繝懊ち繝ｳ蜻ｨ繧翫�譫�*/
+        border-radius: 3px;  /*譫�縺ｮ隗偵ｒ荳ｸ繧√ｋ*/
+        transition: .4s;  /*繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ*/
+    }
+    
+    .list .gnav .menu .button:hover {  /*繧ｫ繝ｼ繧ｽ繝ｫ縺瑚ｧｦ繧後◆譎ゅ�蜃ｦ逅�*/
+        background: #67c5ff;
+        color: white;
+    }

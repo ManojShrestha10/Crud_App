@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>設計</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="link.css">
+  <link rel="stylesheet" href="haikei.css">
+  <link rel="stylesheet" href="yajurisi.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="fade.js"></script>
+  <style>
+
+   .title {/*親div*/
+    position: relative;/*相対配置*/
+    height: 90%;
+   }
+
+   .title h1 {
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    font-weight: bold; /*太字に*/
+    font-size: 3em;/*サイズ2倍*/
+    font-family :Quicksand, sans-serif;/*Google Font*/
+    top: 0;
+    left: 10%;
+   }
+
+   .title img {
+    width: 100%;
+    height:100%;
+   }
+
+   .sekkei{
+    
+    font-size:40px
+   }
+  
+  </style>
+</head>
+
+<body>
+<h2 id="midasi">設計</h2>
+<div id="main">
+ <h1>サーバー構成</h1>
+    <h2>SERVER1</h2>
+    <h3>役割:</h3>
+    <p>
+        <ur>
+        <li>トラフィックの分散: サーバー1はトラフィックを分散させるための主導者として機能します.</li>
+        <li>ファイアウォール: 同じIPアドレスからの悪意のある攻撃トラフィックをフィルタリングするためのファイアウォールが搭載されています。</li>
+        <li>システム監視: zabbixを使用してネットワーク攻撃時のコンピューターの状態を監視します。</li>
+        <li>トラフィック分配: Load balancerを使用して処理が必要な大量のトラフィックを分配します</li>
+        </ur>
+    </p>
+    <h2>SERVER2</h2>
+    <h3>役割:</h3>
+    <ul>
+        <li>余分なトラフィック処理: サーバー1から分散された余分なトラフィックを処理します。</li>
+    </ul>
+    <h2>SERVER3</h2>
+    <h3>役割:</h3>
+    <ul>
+        <li>
+            余分なトラフィック処理: サーバー1から分散された余分なトラフィックを処理します。
+        </li>
+    </ul>
+    <h2>PC構成</h2>
+    <h3>PC1</h3>
+     <h3>役割:</h3>
+     <ul>
+        <li>
+            悪意のある攻撃者模倣: PC1は悪意のある攻撃者を模倣し、"hping"コマンドを使用してカスタムTCP/IPパケットを送信します。
+            <h3>攻撃手順:</h3>
+            <ol>
+                <li>
+                    "hping"を使用して異なる種類のTCP、UDP、ICMPパケットを生成します。</li>
+                    <li>ポートスキャン: "hping"を使用してポートスキャンを実行し、ターゲットホスト上のオープンなポートやアプリケーションの応答を調査します。</li>
+                    <li>ファイアウォールテスト: "hping"を使用してファイアウォールのルールをテストし、どのルールが適用されているか、どのルールがバイパスされているかを調べます。</li>
+                    <li>およびDDoS攻撃のシミュレーション: "hping"を使用してDoSやDDoS攻撃をシミュレートします。ただし、関連する法律を遵守し、慎重に使用する必要があります。</li>
+                
+            </ol>
+        </li>
+     </ul>
+    <h3>PC2</h3>
+    <h3>役割:</h3>
+    <ol>
+        <li>普通の検査ツール: PC2は通常の検査ツールとして機能し、サーバー1に対してzabbixを使用してシステムを監視します。
+            セキュリティ注意事項</li>
+        <li>PC1の攻撃活動は合法的なテストおよびシミュレーション目的のみで使用されるべきです。関連する法律および規制を遵守する必要があります。
+            サーバー1のファイアウォールは悪意のある攻撃トラフィックをフィルタリングするため、セキュリティ対策が適切に構成されている必要があります。</li>
+    </ol>
+   
+</div>
+<a href="kousei.html" class="arrow-right"></a>
+</body>
+</html>

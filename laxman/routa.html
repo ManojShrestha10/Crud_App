@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ルータ機能</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="link.css">
+  <link rel="stylesheet" href="haikei.css">
+  <link rel="stylesheet" href="css/router.css">
+  <link rel="stylesheet" href="yajurisi.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+<h2 id="midasi">ルータ機能</h2>
+<div class="tabs">
+  <input type="radio" name="tab_name" id="tab1" checked>
+  <label class="tab_class" for="tab1">DHCP</label>
+  <div class="content_class">
+    <p>DHCP<br>
+     DHCPとは、IPアドレスやドメイン名、などの基本設定を機器に自動で振り分けるためのプロトコル。規模が大きい場合、機器に手動で設定を行うには手間がかかり、間違いが発生する可能性があるが、DHCPを利用することで簡単に設定を行うことができる。
+    設定の簡易化を図るため、Area1のPCへの振り分けは、DHCPを利用する
+    </p>
+  </div>
+  <input type="radio" name="tab_name" id="tab2" >
+  <label class="tab_class" for="tab2">VPN</label>
+  <div class="content_class">
+    <p>VPN<br>
+        VPNとは仮想専用通信網を意味する。カプセル化処理を行うことで第三者には見えない仮想的なトンネルを形成して通信を行う。認証技術や暗号化技術を利用することで、通信のセキュリティを高めることが可能となる。
+   </p>
+  </div>
+</div>
+<script>
+ScrollReveal().reveal('.kou1', {
+ duration: 1000,
+ delay: 500
+});
+</script>
+<a href="saba.html" class="arrow-right"></a>
+<a href="kouchiku.html" class="arrow-left"></a>
+</body>
+</html>
